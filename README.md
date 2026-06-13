@@ -1,32 +1,37 @@
-        # OKX Web3 Reverse Client
+# OKX Web3 Reverse Client
 
-        Python client for endpoints used by [https://web3.okx.com](https://web3.okx.com). The implementation is browser/reverse-engineered and mirrors the internal clients used in local DEX modules.
+Python client for endpoints used by [https://web3.okx.com](https://web3.okx.com). The implementation is browser/reverse-engineered and mirrors the internal clients used in local DEX modules.
 
-        ## Install
+## Educational Use
 
-        ```bash
-        pip install git+https://github.com/bigidulka/dex-client-okx-web3.git
-        ```
+This project is published as part of an educational process for studying web/API clients and data access patterns. It is unofficial, not affiliated with or endorsed by the upstream service, and should be used responsibly according to the target site's terms and applicable law.
 
-        For local development:
 
-        ```bash
-        pip install -e '.[dev]'
-        pytest
-        ```
+## Install
 
-        ## Quick start
+```bash
+pip install git+https://github.com/bigidulka/dex-client-okx-web3.git
+```
 
-        ```python
-        from dex_client_okx_web3 import OKXWeb3Client
+For local development:
 
-        client = OKXWeb3Client()
-        # call any method below; all methods return decoded JSON dict/list payloads
-        ```
+```bash
+pip install -e '.[dev]'
+pytest
+```
 
-        ## Methods
+## Quick start
 
-        - `ranking_content`
+```python
+from dex_client_okx_web3 import OKXWeb3Client
+
+client = OKXWeb3Client()
+# call any method below; all methods return decoded JSON dict/list payloads
+```
+
+## Methods
+
+- `ranking_content`
 - `ranking_config`
 - `token_overview`
 - `latest_info`
@@ -58,11 +63,11 @@
 - `list_alert_rules`
 - `alert_push_bind`
 
-        ## Endpoint inventory
+## Endpoint inventory
 
-        Extracted from existing Local clients and rechecked with browser-harness network capture where the site allowed capture.
+Extracted from existing Local clients and rechecked with browser-harness network capture where the site allowed capture.
 
-        - `['GET', '/priapi/v1/dx/market/v3/advanced/ranking/content', 'advanced ranking content']`
+- `['GET', '/priapi/v1/dx/market/v3/advanced/ranking/content', 'advanced ranking content']`
 - `['GET', '/priapi/v1/dx/market/v3/advanced/ranking/config', 'advanced ranking config']`
 - `['GET', '/priapi/v1/dx/market/v2/token/overview', 'token overview']`
 - `['GET', '/priapi/v1/dx/market/v2/latest/info', 'latest info']`
@@ -94,11 +99,11 @@
 - `['POST', '/priapi/v1/dx/market/v2/listAlertRules', 'alert rules']`
 - `['POST', '/priapi/v1/dx/market/v2/alert/web/push-bind', 'alert push bind']`
 
-        Full details: [`endpoint_inventory.json`](endpoint_inventory.json).
+Full details: [`endpoint_inventory.json`](endpoint_inventory.json).
 
-        ## Notes
+## Notes
 
-        - No official SDK is used.
-        - Some endpoints require Cloudflare/browser behavior; pass `use_curl_cffi=True` where available.
-        - Auth/session-only methods need your own cookies/tokens. Do not commit secrets.
-        - These clients are thin transport wrappers; normalize data in your application layer.
+- No official SDK is used.
+- Some endpoints require Cloudflare/browser behavior; pass `use_curl_cffi=True` where available.
+- Auth/session-only methods need your own cookies/tokens. Do not commit secrets.
+- These clients are thin transport wrappers; normalize data in your application layer.
