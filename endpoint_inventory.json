@@ -1,0 +1,389 @@
+{
+  "client": "okx_web3",
+  "title": "OKX Web3 Reverse Client",
+  "base_url": "https://web3.okx.com",
+  "auth": "ok-verify-sign headers, x-site-info, browser headers; trading history supports curl_cffi",
+  "endpoints": [
+    [
+      "GET",
+      "/priapi/v1/dx/market/v3/advanced/ranking/content",
+      "advanced ranking content"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v3/advanced/ranking/config",
+      "advanced ranking config"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/token/overview",
+      "token overview"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/latest/info",
+      "latest info"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/risk/new/check",
+      "risk check"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/chain/list",
+      "chain list"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/config/info",
+      "config info"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/tag/meta",
+      "tag meta"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/tag/displayPosition",
+      "tag display position"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/tag/txHistoryTagFilter",
+      "tx history tag filter"
+    ],
+    [
+      "POST",
+      "/priapi/v1/dx/market/v2/trading-history/filter-list",
+      "trading history"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/trading-history/filter-config",
+      "history filter config"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/trading/kline-bs-point",
+      "kline buy/sell points"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/trading/kline-bs-point/config",
+      "kline buy/sell config"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/trade/multi/marketShowConfig",
+      "market show config"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/trade/multi/marketOrderPlacerStrategy",
+      "market order placer strategy"
+    ],
+    [
+      "POST",
+      "/priapi/v1/dx/market/v2/batch/token/basic/info",
+      "batch token basic info"
+    ],
+    [
+      "GET",
+      "/priapi/v5/dex/token/market/dex-token-hlc-candles",
+      "dex token HLC candles"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/address/collect/support/chain",
+      "address collect support chain"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/address/collect/simplify/query",
+      "address collect simplify query"
+    ],
+    [
+      "GET",
+      "/priapi/v2/wallet/search/market/token-support-chains",
+      "search token support chains"
+    ],
+    [
+      "GET",
+      "/priapi/v2/wallet/search/market/tag/meta",
+      "search market tag meta"
+    ],
+    [
+      "GET",
+      "/priapi/v2/wallet/search/multi-source-hot",
+      "multi source hot search"
+    ],
+    [
+      "GET",
+      "/priapi/v2/wallet/search/config",
+      "search config"
+    ],
+    [
+      "GET",
+      "/priapi/v2/wallet/search/hot",
+      "search hot"
+    ],
+    [
+      "GET",
+      "/priapi/v2/wallet/search/correction",
+      "search correction"
+    ],
+    [
+      "GET",
+      "/priapi/v2/wallet/search/dapp/defi-top-list",
+      "dapp defi top list"
+    ],
+    [
+      "POST",
+      "/priapi/v2/wallet/search/unified",
+      "unified search"
+    ],
+    [
+      "GET",
+      "/priapi/v1/dx/market/v2/alert/web/get-app-key",
+      "alert app key"
+    ],
+    [
+      "POST",
+      "/priapi/v1/dx/market/v2/listAlertRules",
+      "alert rules"
+    ],
+    [
+      "POST",
+      "/priapi/v1/dx/market/v2/alert/web/push-bind",
+      "alert push bind"
+    ]
+  ],
+  "browser_capture": {
+    "okx_web3_token": [
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/address/collect/support/chain?t=1781390257682",
+        "postData": ""
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/et/priapi/xweb",
+        "postData": "_mv=a6ywbd8&_uid=1a724177-9551-4903-81f2-6725ca6b614d&_ct=wallet&_act=Web3_DAU_AllPages_View&_anchor_en_name=Web3_DAU_AllPages_View&_session_id=1781390257787&_page_url=https%3A%2F%2Fweb3.okx.com%2Fru%2Ftoken%2Fbsc%2F0xf39e4b21c84e737df08e2c3b32541d856f508e48&_initial_traffic_attribution=ga_client_id=283171103.1781206622&_extras=%7B%22_amp_rejected%22%3Afalse%2C%22_device_id%22%3A%22eAUYOaka51gbdy0To4sU7C%22%2C%22_event_id%22%3A52%2C%22_sequence_number%22%3A52%2C%22_uuid%22%3A%22a3c168c9-64f2-47d"
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/trading-history/filter-list?t=1781390257702",
+        "postData": "{\"desc\":true,\"orderBy\":\"timestamp\",\"limit\":30,\"tradingHistoryFilter\":{\"chainId\":\"56\",\"tokenContractAddress\":\"0xf39e4b21c84e737df08e2c3b32541d856f508e48\",\"type\":\"0\",\"currentUserWalletAddress\":\"\",\"userAddressList\":[],\"volumeMin\":\"\",\"volumeMax\":\"\",\"priceMin\":\"\",\"priceMax\":\"\",\"amountMin\":\"\",\"amountMax\":\"\"}}"
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/df/list",
+        "postData": "[{\"events\":[{\"event\":\"Web3_DAU_AllPages_View\",\"params\":\"{\\\"web_mode_okx\\\":\\\"wallet\\\",\\\"url\\\":\\\"/ru/token/bsc/0xf39e4b21c84e737df08e2c3b32541d856f508e48\\\",\\\"utm_term\\\":\\\"\\\",\\\"site\\\":\\\"okx_web3\\\",\\\"event_index\\\":1781390990594}\",\"local_time_ms\":1781390257924,\"is_bav\":0,\"session_id\":\"331a0f6f-764b-4b2c-986f-28be98dda2c4\"},{\"event\":\"predefine_pageview\",\"params\":\"{\\\"title\\\":\\\"ESPORTS $0,064459 (Yooldo Games) | Диаграмма торговли и цен на BNB Chain | Кошелек OKX\\\",\\\"url\\\":\\\"https://web3.okx.com/ru/toke"
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/assistant/session/unread-message-count?t=1781390257776",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/config/info?t=1781390257887",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/wallet/mev/list?t=1781390257887",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/alert/web/get-app-key?domain=web3.okx.com&t=1781390257888",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/wallet/web/coin/main?t=1781390257955",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/latest/info?tokenContractAddress=0xf39e4b21c84e737df08e2c3b32541d856f508e48&chainId=56&t=1781390258058",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/token/overview?chainId=56&tokenContractAddress=0xf39e4b21c84e737df08e2c3b32541d856f508e48&t=1781390258058",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/risk/new/check?chainId=56&tokenContractAddress=0xf39e4b21c84e737df08e2c3b32541d856f508e48&t=1781390258058",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/trade/multi/marketShowConfig?t=1781390258058",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/tag/meta?t=1781390258158",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/tag/displayPosition?t=1781390258158",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v5/dex/token/market/dex-token-hlc-candles?chainId=56&address=0xf39e4b21c84e737df08e2c3b32541d856f508e48&after=1781390258101&bar=4H&limit=500&t=1781390258159",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/chain/list?t=1781390258160",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v5/dex/token/market/dex-token-hlc-candles?chainId=56&address=0xf39e4b21c84e737df08e2c3b32541d856f508e48&after=1781390258140&bar=1s&limit=1440&t=1781390258160",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/trading/kline-bs-point?chainId=56&tokenAddress=0xf39e4b21c84e737df08e2c3b32541d856f508e48&fromAddressTags=migrate-for-bs%2Cdev%2Ckol-for-bs&bar=1s&t=1781390258162",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/tag/txHistoryTagFilter?chainId=56&tokenContractAddress=0xf39e4b21c84e737df08e2c3b32541d856f508e48&t=1781390258174",
+        "postData": ""
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/listAlertRules?t=1781390258256",
+        "postData": "{\"deviceId\":\"1a724177-9551-4903-81f2-6725ca6b614d\"}"
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/address/collect/support/chain?t=1781390258298",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v2/wallet/search/market/token-support-chains?t=1781390258310",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v2/wallet/search/market/tag/meta?t=1781390258310",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/address/collect/simplify/query?walletAddress=&t=1781390258312",
+        "postData": ""
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/et/priapi/xweb",
+        "postData": "_mv=a6ywbd8&_uid=1a724177-9551-4903-81f2-6725ca6b614d&_ct=web3_trade&_act=DEXMarket_Token_Page_View&_anchor_en_name=DEXMarket_Token_Page_View&_session_id=1781390257787&_page_url=https%3A%2F%2Fweb3.okx.com%2Fru%2Ftoken%2Fbsc%2F0xf39e4b21c84e737df08e2c3b32541d856f508e48&_initial_traffic_attribution=ga_client_id=283171103.1781206622&_extras=%7B%22_amp_rejected%22%3Afalse%2C%22_device_id%22%3A%22eAUYOaka51gbdy0To4sU7C%22%2C%22_event_id%22%3A53%2C%22_sequence_number%22%3A53%2C%22_uuid%22%3A%222e35a20"
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/df/list",
+        "postData": "[{\"events\":[{\"event\":\"DEXMarket_Token_Page_View\",\"params\":\"{\\\"source\\\":\\\"MARKET\\\",\\\"business_type\\\":\\\"MARKET_DETAIL\\\",\\\"trade_dialog\\\":\\\"no\\\",\\\"terminal\\\":\\\"web\\\",\\\"user_wallet_address\\\":[\\\"\\\"],\\\"is_tee\\\":false,\\\"web_mode_okx\\\":\\\"wallet\\\",\\\"token_address\\\":\\\"0xf39e4b21c84e737df08e2c3b32541d856f508e48\\\",\\\"token_symbol\\\":\\\"ESPORTS\\\",\\\"chain_name\\\":\\\"bsc\\\",\\\"chain_id\\\":\\\"56\\\",\\\"token_type\\\":\\\"non_rwa\\\",\\\"site\\\":\\\"okx_web3\\\",\\\"event_index\\\":1781390990595}\",\"local_time_ms\":1781390258726,\"is_bav\":0,\"s"
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v2/wallet/search/multi-source-hot?t=1781390258365",
+        "postData": ""
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/et/priapi/xweb",
+        "postData": "_mv=a6ywbd8&_uid=1a724177-9551-4903-81f2-6725ca6b614d&_act=_pv&_ct=_pv&_action_type=Show&_element_type=Page&_session_id=1781390257787&_page_url=https%3A%2F%2Fweb3.okx.com%2Fru%2Ftoken%2Fbsc%2F0xf39e4b21c84e737df08e2c3b32541d856f508e48&_initial_traffic_attribution=ga_client_id=283171103.1781206622&_extras=%7B%22_amp_rejected%22%3Afalse%2C%22_device_id%22%3A%22eAUYOaka51gbdy0To4sU7C%22%2C%22_event_id%22%3A54%2C%22_sequence_number%22%3A54%2C%22_uuid%22%3A%225e673988-b659-45c9-8fe0-287f6f4feedc%22%7"
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/trade/multi/marketOrderPlacerStrategy?chainId=56&tokenContractAddress=0xf39e4b21c84e737df08e2c3b32541d856f508e48&t=1781390258489",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/trading/kline-bs-point/config?t=1781390258489",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/invest/web/products/dex/search/header?chainId=56&tokenAddress=0xf39e4b21c84e737df08e2c3b32541d856f508e48&t=1781390258519",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/trading-history/filter-config?t=1781390258557",
+        "postData": ""
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dis/dim?t=1781390259226",
+        "postData": "{\"st\":\"1781390259103\",\"et\":\"Nq/d8lu/1puivwZ9z5NAS0qY6wEtN9SuMgGNjYOTEFkxg4BwO9QgBPxqw2JeLYyHVqIw1zvAZ6D06xcWMJUi5M5mO+IqSHcYCJNhgxar2ic8wk6Bbo9W//XWpw06TPIUp1xSeHZ7c8U2+/IKRrI1XHBJHoJFz8/dQcMDSs8ii6ZX1YLeKthqTU6LejrCPO7o98pCCMiO8Ck3/3ICNj7uOeI6by/mVDrNcpngqbkDjRhZV3adweJ8wgm/3FAcKEyOBqiJU2xbREpHBdKWeAcBvJw/UbY6sudxkv+uqAkXTUwQfh4WVr4EQKqTReELnj0M6lOXzLf1xNxqa4oU7pERVciayGIOtyDvu60Jm09Evto+ivuWb/zV9B/F2djagwLkXv6n6n8OO5QwOZIlX4ia3Uw/PXaE7vJafuPLgOYQklbNxL0PdAT18Bc4Y+xR0J1SJnN90/+qUYmZUgo6lsgRgpCD"
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dx/market/v2/alert/web/push-bind?t=1781390260220",
+        "postData": "{\"deviceToken\":\"18371adc031fb1544d7\",\"appkey\":\"6d6e095560a131fa53921840\",\"deviceId\":\"1a724177-9551-4903-81f2-6725ca6b614d\",\"domain\":\"web3.okx.com\"}"
+      },
+      {
+        "method": "POST",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/dis/did?t=1781390261783",
+        "postData": "{\"st\":\"1781390261599\",\"et\":\"Htsfxag5lhgXfFKa47cwnZ46ufHYVJcJM7zGICs2nzQOtSb+5/Tnt6E52L3gqfErb90lKHePbIvbgA/MpxNPoItMr4wt6JzN+kJz/rUw1kb0GYLa8k9NAohAskLRng3QdTecYD/HU05+ubprbW1OC9auiO/SEM+SJ5+8KlAuKMq2JzLBAIunNHwT5dSFqtBDYrupqGuzcnbgrO5xgu8pLwqcd67ta/ylGlUfbk4MSQ23QTqu77yhXkqJLevy2O4T+Xjn1YupJ5yTP+LEMcgghZpb8cjWhD2D2/IbL98d4D7rg5Ihzt+W+hIQIj/LACex8D6ekKC/tvKioBjPZRbjkmblOs91X4kiktlEvmSZLKTqJYoIdLcWc9DrEApu7pENTdFjzrcM9QkexkRpNKUe3EpH1RSNZ16S2sjhM50BpUu8MXvolrqt516P+4EReGlJYPJPkUN83O8soUGXzgAxGCfO"
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://web3.okx.com/priapi/v1/assistant/service-center/home/featured-announcements?defi=true&t=1781390262772",
+        "postData": ""
+      }
+    ]
+  }
+}

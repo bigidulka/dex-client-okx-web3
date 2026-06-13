@@ -1,0 +1,29 @@
+        <!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>OKX Web3 Reverse Client</title>
+          <style>
+            body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; color:#111; background:#f6f7f9; }
+            main { max-width:960px; margin:0 auto; padding:48px 20px; }
+            h1 { font-size:42px; margin:0 0 12px; letter-spacing:0; }
+            .panel { background:white; border:1px solid #dde1e7; border-radius:8px; padding:20px; margin:18px 0; }
+            code, pre { background:#111820; color:#e8f2ff; border-radius:6px; }
+            code { padding:2px 5px; }
+            pre { padding:16px; overflow:auto; }
+            ul { columns:2; padding-left:20px; }
+            a { color:#0756d6; }
+            @media (max-width:720px) { ul { columns:1; } h1 { font-size:32px; } }
+          </style>
+        </head>
+        <body><main>
+          <h1>OKX Web3 Reverse Client</h1>
+          <p>Standalone Python client for browser-backed crypto market endpoints.</p>
+          <div class="panel"><h2>Install</h2><pre>pip install git+https://github.com/bigidulka/dex-client-okx-web3.git</pre></div>
+          <div class="panel"><h2>Usage</h2><pre>from dex_client_okx_web3 import OKXWeb3Client
+
+client = OKXWeb3Client()</pre></div>
+          <div class="panel"><h2>Methods</h2><ul><li><code>ranking_content</code></li><li><code>ranking_config</code></li><li><code>token_overview</code></li><li><code>latest_info</code></li><li><code>risk_check</code></li><li><code>chain_list</code></li><li><code>config_info</code></li><li><code>tag_meta</code></li><li><code>tag_display_position</code></li><li><code>trading_history_filter_config</code></li><li><code>kline_bs_point_config</code></li><li><code>market_show_config</code></li><li><code>market_order_placer_strategy</code></li><li><code>tx_history_tag_filter</code></li><li><code>kline_bs_point</code></li><li><code>token_hlc_candles</code></li><li><code>trading_history</code></li><li><code>batch_token_basic_info</code></li><li><code>address_collect_support_chain</code></li><li><code>address_collect_simplify_query</code></li><li><code>search_token_support_chains</code></li><li><code>search_market_tag_meta</code></li><li><code>search_multi_source_hot</code></li><li><code>search_config</code></li><li><code>search_hot</code></li><li><code>search_correction</code></li><li><code>search_dapp_defi_top_list</code></li><li><code>search_unified</code></li><li><code>alert_web_get_app_key</code></li><li><code>list_alert_rules</code></li><li><code>alert_push_bind</code></li></ul></div>
+          <div class="panel"><h2>Inventory</h2><p>See <a href="../endpoint_inventory.json">endpoint_inventory.json</a>.</p></div>
+        </main></body></html>
